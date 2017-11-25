@@ -1,0 +1,811 @@
+/*
+###################################################################################
+# XXXXXXXXXXXXXXXXXXMXXXXXXXXM   # xentawiki/xentawiki.php
+#  XXXXXXXXXXXXXXXXXMXXXXXXMXX   # Skin      : xentawiki
+#    XXXXXXXXXXXXXXXMXXXXMXXXX   # Based     : monobook - Dominique Faure 
+#     XXXXXXXXXXXXXXMXXXMXXXXX                 (dfaure@cpan.org) Copyright 2005-2009
+#    XXXXXXXXXXXXXXXMMMXXXXXXX   # Design    : Dindin Hernwan 
+#   XX"   XXXXXXXXXXMMMMMMMMMM                 (dindin_hernawan@yahoo.com) 
+#  XX      MMXXXXXXXXXXXXXXXXX                 Copyright2017
+# X       MMMMXXXXXXXXXXXXXXXX   # Version   : 1.3.2 
+#        MMMMMMMXXXXXXXXXXXXXX   # Website   : http://www.xentaos.org/
+#       MMMMMMMMMMXXXXXXXXXXXX   # License   : MIT License
+#      MMMMMMM     XXXXXXXXXXX
+#     MMMMMM       XXXXXXXXXXX
+#    MMMMM        XXXX  XXXXXX
+#   MMM          XX"      XXXX
+#  M            XX          XX
+# X                          X
+#
+###################################################################################
+
+# MIT License
+
+# Copyright (c) 2017, Dindin Hernawan (root@dev.xentaos.org)
+#               2005-2009, Dominique Faure (dfaure@cpan.org)
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+*/
+
+body {
+
+  font: small sans-serif;
+
+  background: #1f1f1f url("headbg.png") 0px 0px no-repeat;
+
+  color: #f0f0f0;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+#globalwrapper { /* scale back up to a sane default */
+
+  font-size: 127%;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+
+#content {
+
+  margin: 0 0 0.6em 12.2em;
+
+  padding: 0;
+
+  float: none;
+
+  height: 1%; /* workaround for various ie float bugs */
+
+}
+
+
+
+#contentbody {
+
+  padding: 0em 1em 1.5em 1em;
+
+  background: #2f2f2f;
+
+  border: 0px solid #3770AA;
+
+  border-right: none;
+
+  border-top: none;
+
+  line-height: 1.5em;
+
+  position: relative;
+
+  margin-right: 0;
+
+  height: 1%; /* workaround for various ie float bugs */
+
+}
+
+
+
+#header {
+
+  margin: 1.3em 0 0 0;
+
+  border-bottom: 0px solid #3770AA;
+
+}
+
+
+
+#tabs {
+
+  width: 100%;
+
+  /*border: 0px solid #3770AA;*/
+
+}
+
+
+
+#tabs ul {
+
+  padding: 3px 0 2px 0;
+
+  padding-left: 1em;
+
+  margin-left: 0; 
+
+  border-bottom: 0px solid #3770AA; 
+
+  font: normal 12px sans-serif; 
+
+}
+
+#tabs ul li {
+
+  list-style: none;
+
+  margin: 0; 
+
+  display: inline; 
+
+}
+
+#tabs ul li * {
+
+  padding: 3px 0.5em 2px 0.5em;
+
+  margin-left: 3px;
+
+  border: 0px solid #3770AA;
+
+  border-bottom: none;
+
+  background: #1f1f1f;
+
+  text-decoration: none;
+
+  color: #3770AA;
+
+  display: inline;
+
+}
+
+#tabs ul li p {
+
+  color: #f0f0f0;
+
+}
+
+#tabs ul li a:link:hover,
+
+#tabs ul li a:visited:hover {
+
+  border-bottom: 0px solid #1f1f1f;
+
+}
+
+#tabs ul li *#active {
+
+  border-color: #3770AA;
+
+  border-bottom: 0px solid #1f1f1f;
+
+}
+
+#tabs .vspace {
+
+  display: none;
+
+}
+
+
+
+#pageleft {
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 11.6em;
+
+}
+
+
+
+#pagelogo {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  height: 155px;
+
+  width: 12em;
+
+  overflow: visible;
+
+}
+
+#pagelogo a,
+
+#pagelogo a:hover {
+
+  display: block;
+
+  height: 155px;
+
+  width: 12.2em;
+
+  background-repeat: no-repeat;
+
+  background-position: 50% 50% !important;
+
+  text-decoration: none;
+
+  /*border: 0px solid #3770AA;*/
+
+}
+
+
+
+#pageleftcontent {
+
+  padding-top: 160px;
+
+  width: 11.6em;
+
+  overflow: hidden;
+
+}
+
+
+
+.pageleftbodycaption {
+
+  padding-left: 0.5em;
+
+}
+
+
+
+.pageleftbody {
+
+  margin: 0 0 0.6em 0;
+
+  border-left: 0px solid #3770AA; }
+
+
+
+
+
+.pageleftbody {
+
+  margin: 0 0 0.6em 0;
+
+  font-size: 95%;
+
+  background: #1f1f1f;
+
+  border-collapse: collapse;
+
+  border: 0px solid #3770AA;
+
+  border-left: none;
+
+  padding: 0 0.8em 0.3em 0.5em;
+
+  overflow: hidden;
+
+}
+
+.pageleftbody h1,
+
+.pageleftbody h2,
+
+.pageleftbody h3,
+
+.pageleftbody h4 {
+
+  margin: 0;
+
+  padding: 0;
+
+  font-size: 1.2em;
+
+}
+
+.pageleftbody ul {
+
+  line-height: 1.5em;
+
+  list-style-type: square;
+
+  list-style-image: url("bullet.gif");
+
+  font-size: 95%;
+
+}
+
+.pageleftbody li {
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+.pageleftbody input { font-size: 95%; }
+
+
+
+.pageleftbody form {
+
+  margin: 0;
+
+  line-height: 1.5em;
+
+}
+
+#sidesearch input.searchbox {
+
+  margin-top: 0.6em;
+
+  width: 10.8em;
+
+}
+
+#sidesearch  div.searchbutton {
+  padding: 2;
+  text-align: left;
+
+}
+
+
+
+#rightbody {
+
+  padding-top: 1em;
+
+  float: right;
+
+}
+
+
+
+#print {
+
+  padding-top: 0.1em;
+
+  padding-bottom: 3px;
+
+  text-align: right;
+
+  font-size: 90%;
+
+}
+
+#print a:hover {
+
+  border: 1px dotted #3770AA;
+
+  text-decoration: none;
+
+}
+
+#print a {
+
+  padding: 1px;
+
+  padding-right: 2px;
+
+  border: 0px solid #1f1f1f;
+
+}
+
+#print img {
+
+  border: 0;
+
+  margin: 0;
+
+  vertical-align: middle;
+
+}
+
+
+
+#rightbar {
+
+  /* width: 17em; */
+
+  margin: 0.3em 0 0.25em 0.5em;
+
+  padding: 0.2em 0.5em;
+
+
+
+  border: 0px solid #ffad80;
+
+  background-color: #fff7cb;
+
+  font-size: 90%;
+
+  line-height: 1.2em;
+
+}
+
+#rightbar ul {
+
+  list-style-type: square;
+
+  list-style-image: url("required.gif");
+
+}
+
+#rightbar li {
+
+  line-height: 1.2em;
+
+}
+
+.rb-none   { width: 0;
+
+           visibility: hidden; }
+
+.rb-narrow { width: 12em; }
+
+.rb-normal { width: 17em; }
+
+.rb-wide   { width: 22em; }
+
+
+
+#footer {
+
+  background-color: #1f1f1f;
+
+  border: 0px solid #3770AA;
+
+  border-right: none;
+
+  margin: 0.6em 0em 1em 0em;
+
+  padding: 0.4em 0em;
+
+  font-size: 90%;
+
+  position: relative;
+
+  height: 1%; /* workaround for various ie float bugs */
+
+  text-align: center;
+
+}
+
+#footer ul {
+
+  list-style-type: none;
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+#footer li {
+
+  display: inline;
+
+  margin: 0 1.3em;
+
+}
+
+#footer .navbox a {
+
+  padding: 0 3px;
+
+  border: 1px dotted #3770AA;
+
+}
+
+#footer .navbox a:hover {
+
+  text-decoration: none;
+
+  border: 0px solid #3770AA;
+
+}
+
+#footer .navbox a:visited,
+
+#footer .navbox a:active { color: #3770AA; }
+
+
+
+.titlepage {
+
+  /*width: 100%;*/
+
+  margin-bottom: 0.1em;
+
+  clear: none;
+
+}
+
+
+
+a {
+
+  text-decoration: none;
+
+  color: #3770AA;
+
+  background: none;
+
+}
+
+a:visited { color: #3770AA; }
+
+a:active { color: #f0f0f0; }
+
+a:hover { text-decoration: underline; }
+
+
+
+hr {
+
+  height: 1px;
+
+  color: #3770AA;
+
+  background-color: #3770AA;
+
+  border: 0;
+
+  margin: 0.2em 0 0.2em 0;
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+
+  color: #f0f0f0;
+
+  background: none;
+
+  font-weight: normal;
+
+  margin: 0;
+
+  padding-top: 0.5em;
+
+  padding-bottom: 0.17em;
+
+  border-bottom: 0px solid #3770AA;
+
+}
+
+h1, h2 {
+
+  clear:both;
+
+}
+
+h3, h4, h5, h6 {
+
+  border-bottom: 0px;
+
+  font-weight: bold;
+
+}
+
+h1 { font-size: 188%; }
+
+h2 { font-size: 150%; }
+
+h3 { font-size: 132%; }
+
+h4 { font-size: 116%; }
+
+h5 { font-size: 100%; }
+
+h6 { font-size: 80%;  }
+
+
+
+ul {
+
+  line-height: 1.5em;
+
+  list-style-type: square;
+
+  margin: 0.3em 0 0 1.5em;
+
+  padding: 0;
+
+  list-style-image: url("bullet.gif");
+
+}
+
+ul.historylist {
+
+  list-style-image: none;
+
+}
+
+ol {
+
+  line-height: 1.5em;
+
+  margin: 0.3em 0 0 3.2em;
+
+  padding:0;
+
+
+  list-style-image: none;
+
+}
+
+li { margin-bottom: 0.1em; }
+
+dt {
+
+  font-weight: bold;
+
+  margin-bottom: 0.1em;
+
+}
+
+dl {
+
+  margin-top: 0.2em;
+
+  margin-bottom: 0.5em;
+
+}
+
+dd {
+
+  line-height: 1.5em;
+
+  margin-left: 2em;
+
+  margin-bottom: 0.1em;
+
+}
+
+code { background-color: #1f1f1f; }
+pre {
+  padding: 1em;
+  color: #f0f0f0;
+  background-color: #1f1f1f;
+  line-height: 1.1em;
+  clear: both;
+
+}
+/*
+
+a.urllink img {
+
+  position: relative;
+
+  left: 2px;
+
+}*/
+
+a.urllink {
+
+  background: url(external.png) center right no-repeat;
+
+  color: #3770AA;
+
+  padding-right: 13px;
+
+}
+
+
+
+a.createlinktext,
+
+a.createlinktext:visited {
+
+  color: #EB095D;
+
+  font-weight: bold;
+
+  border-bottom: none;
+
+}
+
+a.createlink,
+
+a.createlink:visited {
+
+  color: #3770AA;
+
+  left: 2px;
+
+  top: 2px;
+
+}
+
+
+
+.sidehead {
+
+  color: #f0f0f0;
+
+  background: none;
+
+  font-weight: normal;
+
+  margin: 0.2em 0 0 0;
+
+  border-bottom: 0px solid #3770AA;
+
+  padding: 0;
+
+  font-size: 1.2em;
+
+}
+
+.wikilink .urllink {
+
+  background: none;
+
+  padding: 0;
+
+}
+
+
+
+#wikitext {
+
+  position: relative;
+
+}
+
+#wikitext form, #wikitext input {
+
+  font: normal 11px tahoma, geneva, arial, helvetica, sans-serif;
+
+}
+
+
+
+#wikiedit {
+
+  position: relative;
+
+  height: 1%; /* workaround for various ie float bugs */
+
+}
+
+#wikiedit textarea {
+
+  margin-top: 0.5em;
+
+  padding: 0;
+
+  width: 100%;
+
+}
+
+
+
+#stopwatch pre { 
+
+  margin-left: 14em;
+
+  font: 8pt/1 monospace;
+
+}
+

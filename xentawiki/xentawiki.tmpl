@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- 
+###################################################################################
+# XXXXXXXXXXXXXXXXXXMXXXXXXXXM   # xentawiki/xentawiki.php
+#  XXXXXXXXXXXXXXXXXMXXXXXXMXX   # Skin      : xentawiki
+#    XXXXXXXXXXXXXXXMXXXXMXXXX   # Based     : monobook - Dominique Faure 
+#     XXXXXXXXXXXXXXMXXXMXXXXX                 (dfaure@cpan.org) Copyright 2005-2009
+#    XXXXXXXXXXXXXXXMMMXXXXXXX   # Design    : Dindin Hernwan 
+#   XX"   XXXXXXXXXXMMMMMMMMMM                 (dindin_hernawan@yahoo.com) 
+#  XX      MMXXXXXXXXXXXXXXXXX                 Copyright2017
+# X       MMMMXXXXXXXXXXXXXXXX   # Version   : 1.3.2 
+#        MMMMMMMXXXXXXXXXXXXXX   # Website   : http://www.xentaos.org/
+#       MMMMMMMMMMXXXXXXXXXXXX   # License   : MIT License
+#      MMMMMMM     XXXXXXXXXXX
+#     MMMMMM       XXXXXXXXXXX
+#    MMMMM        XXXX  XXXXXX
+#   MMM          XX"      XXXX
+#  M            XX          XX
+# X                          X
+#
+###################################################################################
+
+# MIT License
+
+# Copyright (c) 2017, Dindin Hernawan (root@dev.xentaos.org)
+#               2005-2009, Dominique Faure (dfaure@cpan.org)
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+-->
+<head>
+  <title><!--function:RenderTitle--></title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <meta name="description" content="Xenta OS - Distro Linux Indonesia" />
+  <meta name="author" content="dindin" />
+  <meta name="robots" content="all" />
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <!--HTMLHeader-->
+  <!-- <link rel='stylesheet' href='$SkinDirUrl/xentawiki.css' type='text/css'/> -->
+<!--function:RenderStyle leftbardisabled-->
+<!--function:RenderStyle ! tabsdisabled-->
+</head>
+<body><a name='xentawiki_topofpage'></a>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+              <div class='pageleftbodycaption'><!--function:RenderPart search_title--></div>
+
+      <div class='pageleftbody' id='sidesearch'>
+          <form name='searchform' action='{$ScriptUrl}/$[{$SiteGroup}/Search]'>
+            <input type='hidden' name='pagename' value='$[{$SiteGroup}/Search]'/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <div  class='searchbutton'>
+            </br>
+            <input class='searchbutton' type='submit' value='$[Search]'/></div>
+          </form>
+        </div><!-- id='sidesearch' -->
+        <div class='pageleftbodycaption'><!--function:RenderPart sidebar_title--></div>
+        <div class='pageleftbody' id='sidebar'>
+          <!--wiki:$Group.SideBar $SiteGroup.SideBar-->
+        </div><!-- id='sidebar' -->
+        
+        <!--function:RenderSidePart pageleftbodycaption pageleftbody sidenote {$FullName}-SideNote {$Group}.SideNote {$SiteGroup}.SideNote-->
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url($PageLogoUrl);'
+           href='{$ScriptUrl}' title="<!--function:RenderTitle-->"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <!--function:RenderActions {$Group}.PageActions {$SiteGroup}.PageActions-->
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+          <!--PageTitleFmt--><h1 class='titlepage'><!--function:RenderPart title--></h1><!--/PageTitleFmt-->
+          <div id='rightbody'>
+            <!--PageRightFmt--><div id='rightbar' class='$RightBarClass'><!--wiki:{$Group}.RightBar {$SiteGroup}.RightBar--></div><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt-->
+</body>
+<footer>
+<!-- START FOOTER XENTA OS -->
+<font size="2">Copyright &#169; <script type='text/javascript'>var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> Xenta OS. This page is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY SA 4.0</a>. Powered by <a href="http://www.pmwiki.org/">PmWiki. </a>XentaWiki Skins - <a href="https://github.com/xentaos/xenta-wiki">Get This Skins</a></font>
+<br/>
+<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode"><img src="http://wiki.xentaos.org/img/button-ccbysa.png" alt="CC BY SA 4.0"></a> <a href="https://html5.validator.nu/?doc=http%3A%2F%2Fwiki.xentaos.org%2F"><img src="http://wiki.xentaos.org/img/button-html5.png" alt="HTML5 Valid"></a> <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwiki.xentaos.org%2F"><img src="http://wiki.xentaos.org/img/button-css.png" alt="CSS Valid"></a> 
+<!-- END FOOTER XENTA OS -->
+</footer>
+</html>
